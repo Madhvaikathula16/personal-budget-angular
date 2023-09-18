@@ -9,7 +9,7 @@ body {
 
 div.menu {
     width: 100%;
-    background-color: #463049;
+    background-color: #4d5791;
     height: 44px;
     padding: 0 40px;
 }
@@ -70,15 +70,15 @@ div.hero h2 {
     width: 100%;
 }
 
-/* .maincontent-skip {
+.maincontent-skip {
     position: absolute;
-    bottom: -245px;
+    /* bottom: -610px; */
     background-color: #4d5791;
     color: #fff;
     padding: 5px 5px;
     text-decoration: none;
     left: 45%;
-} */
+}
 
 .page-area {
     max-width: 768px;
@@ -116,6 +116,13 @@ div.hero h2 {
     width: 100%;
     height: 100px;
   }
+  .chart {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: 350px;
+  }
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
@@ -124,3 +131,4 @@ div.hero h2 {
     padding-top: 10px;
     text-align: center;
   }
+  

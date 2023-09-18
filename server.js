@@ -4,22 +4,7 @@ const port = 3000;
 
 app.use('/', express.static('public'));
 
-const budget = {
-    myBudget: [
-    {
-        title: 'Eat out',
-        budget: 60
-    },
-    {
-        title: 'Rent',
-        budget: 350
-    },
-    {
-        title: 'Groceries',
-        budget: 90
-    },
-]
-};
+const budget =require('./budgetdb.json');
 
 app.get('/hello', (req, res) => {
     res.send('Hello World!');
@@ -30,5 +15,5 @@ app.get('/budget', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log('Example app listening at http://localhost:',port )
+    console.log(`Example app listening at http://localhost:${port}`)
 });
